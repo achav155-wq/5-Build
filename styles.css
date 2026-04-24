@@ -126,7 +126,32 @@ footer {
     }
     .card-row {
         display: flex;
-        justify-content: space-between;
+    }
+
+    .card-row section {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        grid-template-columns: 1fr 350px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card-row {
+        gap: 2rem;
     }
 
     .card-row section {
